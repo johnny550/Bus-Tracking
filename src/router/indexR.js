@@ -6,6 +6,7 @@ import Location from '../components/LocationSetting/LocationSetting.vue'
 import Contact from '../components/Contact/Contact.vue'
 import About from '../components/About/About.vue'
 import Loc from '../components/LocationSetting/LocationSetting.vue'
+import GPS from '../components/GPS/sendGPS.vue'
 
 Vue.use(Router)
 
@@ -42,7 +43,11 @@ export default new Router({
     },
     {
         path: '/Location',
-        components: Loc
+        component: Loc
+    },
+    {
+        path: '/GPS',
+        component: GPS
     }
 ]
 })

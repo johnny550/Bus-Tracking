@@ -4,6 +4,7 @@ import Vuetify from 'vuetify'
 import router from './router/indexR.js'
 import App from './App.vue'
 
+
 Vue.use(Vuetify)
 
 // index.js or main.js
@@ -18,7 +19,11 @@ new Vue({
    
     return{
       Password: '',
-      DriverID: ''
+      DriverID: '',
+               
+      lat:'',
+      lon:''
+   
     } 
 
 

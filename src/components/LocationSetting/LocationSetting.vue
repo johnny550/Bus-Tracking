@@ -19,7 +19,7 @@
         <v-btn  
         @click.native="submit"
         >
-        <router-link to="/"> submit </router-link>
+        <router-link to="/GPS"> submit </router-link>
         </v-btn>
         <v-btn
         @click.native="clear"
