@@ -11942,7 +11942,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -12293,7 +12293,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuetify__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_indexR_js__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__App_vue__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__ = __webpack_require__(55);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__ = __webpack_require__(54);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__);
 
 
@@ -12642,8 +12642,8 @@ var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
-		var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
+	module.hot.accept("!!../../../node_modules/css-loader/index.js!./app.css", function() {
+		var newContent = require("!!../../../node_modules/css-loader/index.js!./app.css");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -35619,7 +35619,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -35696,7 +35696,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -35958,7 +35958,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36032,7 +36032,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36109,7 +36109,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36233,7 +36233,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36322,7 +36322,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36460,7 +36460,7 @@ var render = function() {
                   _c("v-icon", { attrs: { left: "" } }, [
                     _vm._v(_vm._s(item.icon))
                   ]),
-                  _vm._v("\n          " + _vm._s(item.title))
+                  _vm._v("\n        " + _vm._s(item.title))
                 ],
                 1
               )
@@ -36507,7 +36507,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36613,12 +36613,11 @@ render._withStripped = true
 
 
 /***/ }),
-/* 54 */,
-/* 55 */
+/* 54 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(56);
+var content = __webpack_require__(55);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -36664,7 +36663,7 @@ if(false) {
 }
 
 /***/ }),
-/* 56 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(4)(false);

@@ -32,7 +32,7 @@
        
       </v-toolbar-items>
     </v-toolbar>
-</div>
+  </div>
 </template>
 
 <script>
