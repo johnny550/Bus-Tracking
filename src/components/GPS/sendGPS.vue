@@ -4,7 +4,7 @@
 	<p>{{error}}</p>
       <v-text-field id="lat"
         v-model="$root.lat"
-        label="lat"
+        label="Latitude"
         box
         required
         disabled
@@ -12,8 +12,7 @@
         
         <v-text-field id="lon"
         v-model="$root.lon"
-        type="lon"
-        label="lon"
+        label="Longitude"
         box
         required
         disabled
@@ -45,8 +44,8 @@ export default {
      methods:{
    
 	showPosition:function (position) {	
-		   this.lat = position.coords.latitude;
-		this.lon = position.coords.longitude;
+		  	Vue.set(this.$root, 'lat', position.coords.latitude);
+      	Vue.set(this.$root, 'lon', position.coords.longitude);
     },
     error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
@@ -63,3 +62,4 @@ export default {
 
 };
 </script> 
+

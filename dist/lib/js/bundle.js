@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 19);
+/******/ 	return __webpack_require__(__webpack_require__.s = 20);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -11116,7 +11116,7 @@ return Vue;
 
 })));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(20).setImmediate))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(21).setImmediate))
 
 /***/ }),
 /* 2 */
@@ -11487,7 +11487,7 @@ var singleton = null;
 var	singletonCounter = 0;
 var	stylesInsertedAtTop = [];
 
-var	fixUrls = __webpack_require__(24);
+var	fixUrls = __webpack_require__(25);
 
 module.exports = function(list, options) {
 	if (typeof DEBUG !== "undefined" && DEBUG) {
@@ -11823,15 +11823,21 @@ function updateLink (link, options, obj) {
 
 /***/ }),
 /* 6 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "transport.gif?199fcbf107bcc28f85dcf6dc7bdfea82";
+
+/***/ }),
+/* 7 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___ = __webpack_require__(8);
 /* unused harmony namespace reexport */
  /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_script_lang_js___["a" /* default */]); 
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -11878,13 +11884,14 @@ function updateLink (link, options, obj) {
         } ,      
     
      methods: {
-           checkForm: function (e) {
+           checkForm(e){
       if (this.$root.Password && this.$root.DriverID) {
         return true;
+        alert("subvmit now")
         
       }
 
-      this.errors = [];
+     // this.errors = [];
 
       if (!this.$root.Password) {
         this.errors.push('Password required.');
@@ -11899,7 +11906,7 @@ function updateLink (link, options, obj) {
                 
                 console.log('hey')
                 
-                alert(this.$root.Password)
+               // alert(this.$root.Password)
                 
                
 
@@ -11914,12 +11921,12 @@ function updateLink (link, options, obj) {
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__LocationSetting_vue_vue_type_template_id_7cfd03f2___ = __webpack_require__(34);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__LocationSetting_vue_vue_type_script_lang_js___ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__LocationSetting_vue_vue_type_template_id_7cfd03f2___ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__LocationSetting_vue_vue_type_script_lang_js___ = __webpack_require__(10);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
@@ -11942,7 +11949,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -11963,16 +11970,16 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_script_lang_js___ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_script_lang_js___ = __webpack_require__(11);
 /* unused harmony namespace reexport */
  /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_script_lang_js___["a" /* default */]); 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -12038,20 +12045,19 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 
 
 /***/ }),
-/* 11 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_script_lang_js___ = __webpack_require__(12);
-/* unused harmony namespace reexport */
- /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_script_lang_js___["a" /* default */]); 
-
-/***/ }),
 /* 12 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_script_lang_js___ = __webpack_require__(13);
+/* unused harmony namespace reexport */
+ /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_script_lang_js___["a" /* default */]); 
+
+/***/ }),
+/* 13 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 //
 //
 //
@@ -12098,8 +12104,8 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
      methods:{
    
 	showPosition:function (position) {	
-		   this.lat = position.coords.latitude;
-		this.lon = position.coords.longitude;
+		  	Vue.set(this.$root, 'lat', position.coords.latitude);
+      	Vue.set(this.$root, 'lon', position.coords.longitude);
     },
     error(err) {
   console.warn(`ERROR(${err.code}): ${err.message}`);
@@ -12118,21 +12124,21 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 
 
 /***/ }),
-/* 13 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___ = __webpack_require__(14);
-/* unused harmony namespace reexport */
- /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___["a" /* default */]); 
-
-/***/ }),
 /* 14 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_AppToolbar_vue__ = __webpack_require__(48);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_AppFooter_vue__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___ = __webpack_require__(15);
+/* unused harmony namespace reexport */
+ /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_script_lang_js___["a" /* default */]); 
+
+/***/ }),
+/* 15 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__components_AppToolbar_vue__ = __webpack_require__(49);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_AppFooter_vue__ = __webpack_require__(52);
 //
 //
 //
@@ -12143,8 +12149,8 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 //
 //
 
-    
-    
+
+
 /* harmony default export */ __webpack_exports__["a"] = ({
     name : 'App',
     components: {AppToolbar: __WEBPACK_IMPORTED_MODULE_0__components_AppToolbar_vue__["a" /* default */],AppFooter: __WEBPACK_IMPORTED_MODULE_1__components_AppFooter_vue__["a" /* default */]}
@@ -12152,20 +12158,19 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 
 
 /***/ }),
-/* 15 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_script_lang_js___ = __webpack_require__(16);
-/* unused harmony namespace reexport */
- /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_script_lang_js___["a" /* default */]); 
-
-/***/ }),
 /* 16 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_script_lang_js___ = __webpack_require__(17);
+/* unused harmony namespace reexport */
+ /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_script_lang_js___["a" /* default */]); 
+
+/***/ }),
+/* 17 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 //
 //
 //
@@ -12218,20 +12223,19 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 
 
 /***/ }),
-/* 17 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_script_lang_js___ = __webpack_require__(18);
-/* unused harmony namespace reexport */
- /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_script_lang_js___["a" /* default */]); 
-
-/***/ }),
 /* 18 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-//
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_script_lang_js___ = __webpack_require__(19);
+/* unused harmony namespace reexport */
+ /* harmony default export */ __webpack_exports__["a"] = (__WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_script_lang_js___["a" /* default */]); 
+
+/***/ }),
+/* 19 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 //
 //
 //
@@ -12270,9 +12274,9 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: () => ({
     icons: [
-      'facebook_box',
-      'twitter',
-      'google_plus_box',
+      'facebook',
+      'twitter_box',
+      'google_plus',
       'instagram'
     ]
   })
@@ -12280,21 +12284,22 @@ component.options.__file = "src/components/LocationSetting/LocationSetting.vue"
 
 
 /***/ }),
-/* 19 */
+/* 20 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_app_css__ = __webpack_require__(22);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_app_css__ = __webpack_require__(23);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__styles_app_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1__styles_app_css__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(25);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify__ = __webpack_require__(26);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vuetify___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vuetify__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_indexR_js__ = __webpack_require__(26);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__App_vue__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__ = __webpack_require__(54);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__router_indexR_js__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__App_vue__ = __webpack_require__(46);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_vuetify_dist_vuetify_min_css__);
+//import '@babel/polyfill'
 
 
 
@@ -12307,6 +12312,9 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vuet
 // index.js or main.js
  // Ensure you are using css-loader
  
+
+/* var homeImg = document.getElementById('transport');
+homeImg.src = transImage; */
 
 new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
   el: '#app',
@@ -12356,7 +12364,7 @@ new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
 
 
 /***/ }),
-/* 20 */
+/* 21 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global) {var scope = (typeof global !== "undefined" && global) ||
@@ -12412,7 +12420,7 @@ exports._unrefActive = exports.active = function(item) {
 };
 
 // setimmediate attaches itself to the global object
-__webpack_require__(21);
+__webpack_require__(22);
 // On some exotic environments, it's not clear which object `setimmediate` was
 // able to install onto.  Search each possibility in the same order as the
 // `setimmediate` library.
@@ -12426,7 +12434,7 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
 
 /***/ }),
-/* 21 */
+/* 22 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /* WEBPACK VAR INJECTION */(function(global, process) {(function (global, undefined) {
@@ -12619,11 +12627,11 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2), __webpack_require__(3)))
 
 /***/ }),
-/* 22 */
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(23);
+var content = __webpack_require__(24);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -12642,8 +12650,8 @@ var update = __webpack_require__(5)(content, options);
 if(content.locals) module.exports = content.locals;
 
 if(false) {
-	module.hot.accept("!!../../../node_modules/css-loader/index.js!./app.css", function() {
-		var newContent = require("!!../../../node_modules/css-loader/index.js!./app.css");
+	module.hot.accept("!!../../node_modules/css-loader/index.js!./app.css", function() {
+		var newContent = require("!!../../node_modules/css-loader/index.js!./app.css");
 
 		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
 
@@ -12669,7 +12677,7 @@ if(false) {
 }
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(4)(false);
@@ -12677,13 +12685,13 @@ exports = module.exports = __webpack_require__(4)(false);
 
 
 // module
-exports.push([module.i, "body\n{\n\tbackground:white;\n\tfont-family:\"Lucida Grande\", Tahoma, Arial, Verdana, sans-serif;\n\tfont-size:small;\n\tmargin:8px 0 16px;\n\ttext-align:center;\n}\n\n#form_container\n{\n\tbackground:#fff;\n\t\n\tmargin:0 auto;\n\ttext-align:left;\n\twidth:640px;\n}\n\n#top\n{\n\tdisplay:block;\n\theight:10px;\n\tmargin:10px auto 0;\n\twidth:650px;\n}\n\n#footer\n{\n\twidth:640px;\n\tclear:both;\n\tcolor:#999999;\n\ttext-align:center;\n\twidth:640px;\n\tpadding-bottom: 15px;\n\tfont-size: 85%;\n}\n\n#footer a{\n\tcolor:#999999;\n\ttext-decoration: none;\n\tborder-bottom: 1px dotted #999999;\n}\n\n#bottom\n{\n\tdisplay:block;\n\theight:10px;\n\tmargin:0 auto;\n\twidth:650px;\n}\n\nform.appnitro\n{\n\tmargin:20px 20px 0;\n\tpadding:0 0 20px;\n}\n\n/**** Logo Section  *****/\nh1\n{\n\tbackground-color:#4B75B3;\n\tmargin:0;\n\tmin-height:0;\n\tpadding:0;\n\ttext-decoration:none;\n\ttext-indent:-8000px;\n\t\n}\n\nh1 a\n{\n\t\n\tdisplay:block;\n\theight:100%;\n\tmin-height:40px;\n\toverflow:hidden;\n}\n\n\nimg\n{\n\t\n\tborder:none;\n}\n\n\n/**** Form Section ****/\n.appnitro\n{\n\tfont-family:Lucida Grande, Tahoma, Arial, Verdana, sans-serif;\n\tfont-size:small;\n}\n\n.appnitro li\n{\n\twidth:61%;\n}\n\nform ul\n{\n\tfont-size:100%;\n\tlist-style-type:none;\n\tmargin:0;\n\tpadding:0;\n\twidth:100%;\n}\n\nform li\n{\n\tdisplay:block;\n\tmargin:0;\n\tpadding:4px 5px 2px 9px;\n\tposition:relative;\n}\n\nform li:after\n{\n\tclear:both;\n\tcontent:\".\";\n\tdisplay:block;\n\theight:0;\n\tvisibility:hidden;\n}\n\n.buttons:after\n{\n\tclear:both;\n\tcontent:\".\";\n\tdisplay:block;\n\theight:0;\n\tvisibility:hidden;\n}\n\n.buttons\n{\n\tclear:both;\n\tdisplay:block;\n\tmargin-top:10px;\n}\n\n* html form li\n{\n\theight:1%;\n}\n\n* html .buttons\n{\n\theight:1%;\n}\n\n* html form li div\n{\n\tdisplay:inline-block;\n}\n\nform li div\n{\n\tcolor:#444;\n\tmargin:0 4px 0 0;\n\tpadding:0 0 8px;\n}\n\nform li span\n{\n\tcolor:#444;\n\tfloat:left;\n\tmargin:0 4px 0 0;\n\tpadding:0 0 8px;\n}\n\nform li div.left\n{\n\tdisplay:inline;\n\tfloat:left;\n\twidth:48%;\n}\n\nform li div.right\n{\n\tdisplay:inline;\n\tfloat:right;\n\twidth:48%;\n}\n\nform li div.left .medium\n{\n\twidth:100%;\n}\n\nform li div.right .medium\n{\n\twidth:100%;\n}\n\n.clear\n{\n\tclear:both;\n}\n\nform li div label\n{\n\tclear:both;\n\tcolor:#444;\n\tdisplay:block;\n\tfont-size:9px;\n\tline-height:9px;\n\tmargin:0;\n\tpadding-top:3px;\n}\n\nform li span label\n{\n\tclear:both;\n\tcolor:#444;\n\tdisplay:block;\n\tfont-size:9px;\n\tline-height:9px;\n\tmargin:0;\n\tpadding-top:3px;\n}\n\nform li .datepicker\n{\n\tcursor:pointer !important;\n\tfloat:left;\n\theight:16px;\n\tmargin:.1em 5px 0 0;\n\tpadding:0;\n\twidth:16px;\n}\n\n.form_description\n{\n\tborder-bottom:1px dotted #ccc;\n\tclear:both;\n\tdisplay:inline-block;\n\tmargin:0 0 1em;\n}\n\n.form_description[class]\n{\n\tdisplay:block;\n}\n\n.form_description h2\n{\n\tclear:left;\n\tfont-size:160%;\n\tfont-weight:400;\n\tmargin:0 0 3px;\n}\n\n.form_description p\n{\n\tfont-size:95%;\n\tline-height:130%;\n\tmargin:0 0 12px;\n}\n\nform hr\n{\n\tdisplay:none;\n}\n\nform li.section_break\n{\n\tborder-top:1px dotted #ccc;\n\tmargin-top:9px;\n\tpadding-bottom:0;\n\tpadding-left:9px;\n\tpadding-top:13px;\n\twidth:97% !important;\n}\n\nform ul li.first\n{\n\tborder-top:none !important;\n\tmargin-top:0 !important;\n\tpadding-top:0 !important;\n}\n\nform .section_break h3\n{\n\tfont-size:110%;\n\tfont-weight:400;\n\tline-height:130%;\n\tmargin:0 0 2px;\n}\n\nform .section_break p\n{\n\tfont-size:85%;\n\n\tmargin:0 0 10px;\n}\n\n/**** Buttons ****/\ninput.button_text\n{\n\toverflow:visible;\n\tpadding:0 7px;\n\twidth:auto;\n}\n\n.buttons input\n{\n\tfont-size:120%;\n\tmargin-right:5px;\n}\n\n/**** Inputs and Labels ****/\nlabel.description\n{\n\tborder:none;\n\tcolor:#222;\n\tdisplay:block;\n\tfont-size:95%;\n\tfont-weight:700;\n\tline-height:150%;\n\tpadding:0 0 1px;\n}\n\nspan.symbol\n{\n\tfont-size:115%;\n\tline-height:130%;\n}\n\ninput.text\n{\n\t/* background:#fff url(../../../images/shadow.gif) repeat-x top; */\n\tborder-bottom:1px solid #ddd;\n\tborder-left:1px solid #c3c3c3;\n\tborder-right:1px solid #c3c3c3;\n\tborder-top:1px solid #7c7c7c;\n\tcolor:#333;\n\tfont-size:100%;\n\tmargin:0;\n\tpadding:2px 0;\n}\n\ninput.file\n{\n\tcolor:#333;\n\tfont-size:100%;\n\tmargin:0;\n\tpadding:2px 0;\n}\n\ntextarea.textarea\n{\n\t/* background:#fff url(../../../images/shadow.gif) repeat-x top; */\n\tborder-bottom:1px solid #ddd;\n\tborder-left:1px solid #c3c3c3;\n\tborder-right:1px solid #c3c3c3;\n\tborder-top:1px solid #7c7c7c;\n\tcolor:#333;\n\tfont-family:\"Lucida Grande\", Tahoma, Arial, Verdana, sans-serif;\n\tfont-size:100%;\n\tmargin:0;\n\twidth:99%;\n}\n\nselect.select\n{\n\tcolor:#333;\n\tfont-size:100%;\n\tmargin:1px 0;\n\tpadding:1px 0 0;\n\t/* background:#fff url(../../../images/shadow.gif) repeat-x top; */\n\tborder-bottom:1px solid #ddd;\n\tborder-left:1px solid #c3c3c3;\n\tborder-right:1px solid #c3c3c3;\n\tborder-top:1px solid #7c7c7c;\n}\n\n\ninput.currency\n{\n\ttext-align:right;\n}\n\ninput.checkbox\n{\n\tdisplay:block;\n\theight:13px;\n\tline-height:1.4em;\n\tmargin:6px 0 0 3px;\n\twidth:13px;\n}\n\ninput.radio\n{\n\tdisplay:block;\n\theight:13px;\n\tline-height:1.4em;\n\tmargin:6px 0 0 3px;\n\twidth:13px;\n}\n\nlabel.choice\n{\n\tcolor:#444;\n\tdisplay:block;\n\tfont-size:100%;\n\tline-height:1.4em;\n\tmargin:-1.55em 0 0 25px;\n\tpadding:4px 0 5px;\n\twidth:90%;\n}\n\nselect.select[class]\n{\n\tmargin:0;\n\tpadding:1px 0;\n}\n\n*:first-child+html select.select[class]\n{\n\tmargin:1px 0;\n}\n\n.safari select.select\n{\n\tfont-size:120% !important;\n\tmargin-bottom:1px;\n}\n\ninput.small\n{\n\twidth:25%;\n}\n\nselect.small\n{\n\twidth:25%;\n}\n\ninput.medium\n{\n\twidth:50%;\n}\n\nselect.medium\n{\n\twidth:50%;\n}\n\ninput.large\n{\n\twidth:99%;\n}\n\nselect.large\n{\n\twidth:100%;\n}\n\ntextarea.small\n{\n\theight:5.5em;\n}\n\ntextarea.medium\n{\n\theight:10em;\n}\n\ntextarea.large\n{\n\theight:20em;\n}\n\n/**** Errors ****/\n#error_message\n{\n\tbackground:#fff;\n\tborder:1px dotted red;\n\tmargin-bottom:1em;\n\tpadding-left:0;\n\tpadding-right:0;\n\tpadding-top:4px;\n\ttext-align:center;\n\twidth:99%;\n}\n\n#error_message_title\n{\n\tcolor:#DF0000;\n\tfont-size:125%;\n\tmargin:7px 0 5px;\n\tpadding:0;\n}\n\n#error_message_desc\n{\n\tcolor:#000;\n\tfont-size:100%;\n\tmargin:0 0 .8em;\n}\n\n#error_message_desc strong\n{\n\tbackground-color:#FFDFDF;\n\tcolor:red;\n\tpadding:2px 3px;\n}\n\nform li.error\n{\n\tbackground-color:#FFDFDF !important;\n\tborder-bottom:1px solid #EACBCC;\n\tborder-right:1px solid #EACBCC;\n\tmargin:3px 0;\n}\n\nform li.error label\n{\n\tcolor:#DF0000 !important;\n}\n\nform p.error\n{\n\tclear:both;\n\tcolor:red;\n\tfont-size:10px;\n\tfont-weight:700;\n\tmargin:0 0 5px;\n}\n\nform .required\n{\n\tcolor:red;\n\tfloat:none;\n\tfont-weight:700;\n}\n\n/**** Guidelines and Error Highlight ****/\nform li.highlighted\n{\n\tbackground-color:#fff7c0;\n}\n\nform .guidelines\n{\n\tbackground:#f5f5f5;\n\tborder:1px solid #e6e6e6;\n\tcolor:#444;\n\tfont-size:80%;\n\tleft:100%;\n\tline-height:130%;\n\tmargin:0 0 0 8px;\n\tpadding:8px 10px 9px;\n\tposition:absolute;\n\ttop:0;\n\tvisibility:hidden;\n\twidth:42%;\n\tz-index:1000;\n}\n\nform .guidelines small\n{\n\tfont-size:105%;\n}\n\nform li.highlighted .guidelines\n{\n\tvisibility:visible;\n}\n\nform li:hover .guidelines\n{\n\tvisibility:visible;\n}\n\n.no_guidelines .guidelines\n{\n\tdisplay:none !important;\n}\n\n.no_guidelines form li\n{\n\twidth:97%;\n}\n\n.no_guidelines li.section\n{\n\tpadding-left:9px;\n}\n\n/*** Success Message ****/\n.form_success \n{\n\tclear: both;\n\tmargin: 0;\n\tpadding: 90px 0pt 100px;\n\ttext-align: center\n}\n\n.form_success h2 {\n    clear:left;\n    font-size:160%;\n    font-weight:normal;\n    margin:0pt 0pt 3px;\n}\n\n/*** Password ****/\nul.password{\n    margin-top:60px;\n    margin-bottom: 60px;\n    text-align: center;\n}\n.password h2{\n    color:#DF0000;\n    font-weight:bold;\n    margin:0pt auto 10px;\n}\n\n.password input.text {\n   font-size:170% !important;\n   width:380px;\n   text-align: center;\n}\n.password label{\n   display:block;\n   font-size:120% !important;\n   padding-top:10px;\n   font-weight:bold;\n}\n\n#li_captcha{\n   padding-left: 5px;\n}\n\n\n#li_captcha span{\n\tfloat:none;\n}\n\n/** Embedded Form **/\n\n.embed #form_container{\n\tborder: none;\n}\n\n.embed #top, .embed #bottom, .embed h1{\n\tdisplay: none;\n}\n\n.embed #form_container{\n\twidth: 100%;\n}\n\n.embed #footer{\n\ttext-align: left;\n\tpadding-left: 10px;\n\twidth: 99%;\n}\n\n.embed #footer.success{\n\ttext-align: center;\n}\n\n.embed form.appnitro\n{\n\tmargin:0px 0px 0;\n\t\n}\n\n\n\n/*** Calendar **********************/\ndiv.calendar { position: relative; }\n\n.calendar table {\ncursor:pointer;\nborder:1px solid #ccc;\nfont-size: 11px;\ncolor: #000;\nbackground: #fff;\nfont-family:\"Lucida Grande\", Tahoma, Arial, Verdana, sans-serif;\n}\n\n.calendar .button { \ntext-align: center;    \npadding: 2px;          \n}\n\n.calendar .nav {\nbackground:#f5f5f5;\n}\n\n.calendar thead .title { \nfont-weight: bold;      \ntext-align: center;\nbackground: #dedede;\ncolor: #000;\npadding: 2px 0 3px 0;\n}\n\n.calendar thead .headrow { \nbackground: #f5f5f5;\ncolor: #444;\nfont-weight:bold;\n}\n\n.calendar thead .daynames { \nbackground: #fff;\ncolor:#333;\nfont-weight:bold;\n}\n\n.calendar thead .name { \nborder-bottom: 1px dotted #ccc;\npadding: 2px;\ntext-align: center;\ncolor: #000;\n}\n\n.calendar thead .weekend { \ncolor: #666;\n}\n\n.calendar thead .hilite { \nbackground-color: #444;\ncolor: #fff;\npadding: 1px;\n}\n\n.calendar thead .active { \nbackground-color: #d12f19;\ncolor:#fff;\npadding: 2px 0px 0px 2px;\n}\n\n\n.calendar tbody .day { \nwidth:1.8em;\ncolor: #222;\ntext-align: right;\npadding: 2px 2px 2px 2px;\n}\n.calendar tbody .day.othermonth {\nfont-size: 80%;\ncolor: #bbb;\n}\n.calendar tbody .day.othermonth.oweekend {\ncolor: #fbb;\n}\n\n.calendar table .wn {\npadding: 2px 2px 2px 2px;\nborder-right: 1px solid #000;\nbackground: #666;\n}\n\n.calendar tbody .rowhilite td {\nbackground: #FFF1AF;\n}\n\n.calendar tbody .rowhilite td.wn {\nbackground: #FFF1AF;\n}\n\n.calendar tbody td.hilite { \npadding: 1px 1px 1px 1px;\nbackground:#444 !important;\ncolor:#fff !important;\n}\n\n.calendar tbody td.active { \ncolor:#fff;\nbackground: #529214 !important;\npadding: 2px 2px 0px 2px;\n}\n\n.calendar tbody td.selected { \nfont-weight: bold;\nborder: 1px solid #888;\npadding: 1px 1px 1px 1px;\nbackground: #f5f5f5 !important;\ncolor: #222 !important;\n}\n\n.calendar tbody td.weekend { \ncolor: #666;\n}\n\n.calendar tbody td.today { \nfont-weight: bold;\ncolor: #529214;\nbackground:#D9EFC2;\n}\n\n.calendar tbody .disabled { color: #999; }\n\n.calendar tbody .emptycell { \nvisibility: hidden;\n}\n\n.calendar tbody .emptyrow { \ndisplay: none;\n}\n\n.calendar tfoot .footrow { \ntext-align: center;\nbackground: #556;\ncolor: #fff;\n}\n\n.calendar tfoot .ttip { \nbackground: #222;\ncolor: #fff;\nfont-size:10px;\nborder-top: 1px solid #dedede;\npadding: 3px;\n}\n\n.calendar tfoot .hilite { \nbackground: #aaf;\nborder: 1px solid #04f;\ncolor: #000;\npadding: 1px;\n}\n\n.calendar tfoot .active { \nbackground: #77c;\npadding: 2px 0px 0px 2px;\n}\n\n.calendar .combo {\nposition: absolute;\ndisplay: none;\ntop: 0px;\nleft: 0px;\nwidth: 4em;\nborder: 1px solid #ccc;\nbackground: #f5f5f5;\ncolor: #222;\nfont-size: 90%;\nz-index: 100;\n}\n\n.calendar .combo .label,\n.calendar .combo .label-IEfix {\ntext-align: center;\npadding: 1px;\n}\n\n.calendar .combo .label-IEfix {\nwidth: 4em;\n}\n\n.calendar .combo .hilite {\nbackground: #444;\ncolor:#fff;\n}\n\n.calendar .combo .active {\nborder-top: 1px solid #999;\nborder-bottom: 1px solid #999;\nbackground: #dedede;\nfont-weight: bold;\n}\n\n", ""]);
+exports.push([module.i, "body\n{\n\tbackground:white;\n\tfont-family:\"Lucida Grande\", Tahoma, Arial, Verdana, sans-serif;\n\tfont-size:small;\n\tmargin:8px 0 16px;\n\ttext-align:center;\n}\n#toChange\n{\n\tbackground: #c3c3c3\n}\n#centered {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 50%;\n}\n\n#form_container\n{\n\tbackground:#fff;\n\t\n\tmargin:0 auto;\n\ttext-align:left;\n\twidth:640px;\n}\n\n#top\n{\n\tdisplay:block;\n\theight:10px;\n\tmargin:10px auto 0;\n\twidth:650px;\n}\n\n#footer\n{\n\twidth:640px;\n\tclear:both;\n\tcolor:#999999;\n\ttext-align:center;\n\twidth:640px;\n\tpadding-bottom: 15px;\n\tfont-size: 85%;\n}\n\n#footer a{\n\tcolor:#999999;\n\ttext-decoration: none;\n\tborder-bottom: 1px dotted #999999;\n}\n\n#bottom\n{\n\tdisplay:block;\n\theight:10px;\n\tmargin:0 auto;\n\twidth:650px;\n}\n\nform.appnitro\n{\n\tmargin:20px 20px 0;\n\tpadding:0 0 20px;\n}\n\n/**** Logo Section  *****/\nh1\n{\n\tbackground-color:#4B75B3;\n\tmargin:0;\n\tmin-height:0;\n\tpadding:0;\n\ttext-decoration:none;\n\ttext-indent:-8000px;\n\t\n}\n\nh1 a\n{\n\t\n\tdisplay:block;\n\theight:100%;\n\tmin-height:40px;\n\toverflow:hidden;\n}\n\n\nimg\n{\n\t\n\tborder:none;\n}\n\n\n/**** Form Section ****/\n.appnitro\n{\n\tfont-family:Lucida Grande, Tahoma, Arial, Verdana, sans-serif;\n\tfont-size:small;\n}\n\n.appnitro li\n{\n\twidth:61%;\n}\n\nform ul\n{\n\tfont-size:100%;\n\tlist-style-type:none;\n\tmargin:0;\n\tpadding:0;\n\twidth:100%;\n}\n\nform li\n{\n\tdisplay:block;\n\tmargin:0;\n\tpadding:4px 5px 2px 9px;\n\tposition:relative;\n}\n\nform li:after\n{\n\tclear:both;\n\tcontent:\".\";\n\tdisplay:block;\n\theight:0;\n\tvisibility:hidden;\n}\n\n.buttons:after\n{\n\tclear:both;\n\tcontent:\".\";\n\tdisplay:block;\n\theight:0;\n\tvisibility:hidden;\n}\n\n.buttons\n{\n\tclear:both;\n\tdisplay:block;\n\tmargin-top:10px;\n}\n\n* html form li\n{\n\theight:1%;\n}\n\n* html .buttons\n{\n\theight:1%;\n}\n\n* html form li div\n{\n\tdisplay:inline-block;\n}\n\nform li div\n{\n\tcolor:#444;\n\tmargin:0 4px 0 0;\n\tpadding:0 0 8px;\n}\n\nform li span\n{\n\tcolor:#444;\n\tfloat:left;\n\tmargin:0 4px 0 0;\n\tpadding:0 0 8px;\n}\n\nform li div.left\n{\n\tdisplay:inline;\n\tfloat:left;\n\twidth:48%;\n}\n\nform li div.right\n{\n\tdisplay:inline;\n\tfloat:right;\n\twidth:48%;\n}\n\nform li div.left .medium\n{\n\twidth:100%;\n}\n\nform li div.right .medium\n{\n\twidth:100%;\n}\n\n.clear\n{\n\tclear:both;\n}\n\nform li div label\n{\n\tclear:both;\n\tcolor:#444;\n\tdisplay:block;\n\tfont-size:9px;\n\tline-height:9px;\n\tmargin:0;\n\tpadding-top:3px;\n}\n\nform li span label\n{\n\tclear:both;\n\tcolor:#444;\n\tdisplay:block;\n\tfont-size:9px;\n\tline-height:9px;\n\tmargin:0;\n\tpadding-top:3px;\n}\n\nform li .datepicker\n{\n\tcursor:pointer !important;\n\tfloat:left;\n\theight:16px;\n\tmargin:.1em 5px 0 0;\n\tpadding:0;\n\twidth:16px;\n}\n\n.form_description\n{\n\tborder-bottom:1px dotted #ccc;\n\tclear:both;\n\tdisplay:inline-block;\n\tmargin:0 0 1em;\n}\n\n.form_description[class]\n{\n\tdisplay:block;\n}\n\n.form_description h2\n{\n\tclear:left;\n\tfont-size:160%;\n\tfont-weight:400;\n\tmargin:0 0 3px;\n}\n\n.form_description p\n{\n\tfont-size:95%;\n\tline-height:130%;\n\tmargin:0 0 12px;\n}\n\nform hr\n{\n\tdisplay:none;\n}\n\nform li.section_break\n{\n\tborder-top:1px dotted #ccc;\n\tmargin-top:9px;\n\tpadding-bottom:0;\n\tpadding-left:9px;\n\tpadding-top:13px;\n\twidth:97% !important;\n}\n\nform ul li.first\n{\n\tborder-top:none !important;\n\tmargin-top:0 !important;\n\tpadding-top:0 !important;\n}\n\nform .section_break h3\n{\n\tfont-size:110%;\n\tfont-weight:400;\n\tline-height:130%;\n\tmargin:0 0 2px;\n}\n\nform .section_break p\n{\n\tfont-size:85%;\n\n\tmargin:0 0 10px;\n}\n\n/**** Buttons ****/\ninput.button_text\n{\n\toverflow:visible;\n\tpadding:0 7px;\n\twidth:auto;\n}\n\n.buttons input\n{\n\tfont-size:120%;\n\tmargin-right:5px;\n}\n\n/**** Inputs and Labels ****/\nlabel.description\n{\n\tborder:none;\n\tcolor:#222;\n\tdisplay:block;\n\tfont-size:95%;\n\tfont-weight:700;\n\tline-height:150%;\n\tpadding:0 0 1px;\n}\n\nspan.symbol\n{\n\tfont-size:115%;\n\tline-height:130%;\n}\n\ninput.text\n{\n\t/* background:#fff url(../../../images/shadow.gif) repeat-x top; */\n\tborder-bottom:1px solid #ddd;\n\tborder-left:1px solid #c3c3c3;\n\tborder-right:1px solid #c3c3c3;\n\tborder-top:1px solid #7c7c7c;\n\tcolor:#333;\n\tfont-size:100%;\n\tmargin:0;\n\tpadding:2px 0;\n}\n\ninput.file\n{\n\tcolor:#333;\n\tfont-size:100%;\n\tmargin:0;\n\tpadding:2px 0;\n}\n\ntextarea.textarea\n{\n\t/* background:#fff url(../../../images/shadow.gif) repeat-x top; */\n\tborder-bottom:1px solid #ddd;\n\tborder-left:1px solid #c3c3c3;\n\tborder-right:1px solid #c3c3c3;\n\tborder-top:1px solid #7c7c7c;\n\tcolor:#333;\n\tfont-family:\"Lucida Grande\", Tahoma, Arial, Verdana, sans-serif;\n\tfont-size:100%;\n\tmargin:0;\n\twidth:99%;\n}\n\nselect.select\n{\n\tcolor:#333;\n\tfont-size:100%;\n\tmargin:1px 0;\n\tpadding:1px 0 0;\n\t/* background:#fff url(../../../images/shadow.gif) repeat-x top; */\n\tborder-bottom:1px solid #ddd;\n\tborder-left:1px solid #c3c3c3;\n\tborder-right:1px solid #c3c3c3;\n\tborder-top:1px solid #7c7c7c;\n}\n\n\ninput.currency\n{\n\ttext-align:right;\n}\n\ninput.checkbox\n{\n\tdisplay:block;\n\theight:13px;\n\tline-height:1.4em;\n\tmargin:6px 0 0 3px;\n\twidth:13px;\n}\n\ninput.radio\n{\n\tdisplay:block;\n\theight:13px;\n\tline-height:1.4em;\n\tmargin:6px 0 0 3px;\n\twidth:13px;\n}\n\nlabel.choice\n{\n\tcolor:#444;\n\tdisplay:block;\n\tfont-size:100%;\n\tline-height:1.4em;\n\tmargin:-1.55em 0 0 25px;\n\tpadding:4px 0 5px;\n\twidth:90%;\n}\n\nselect.select[class]\n{\n\tmargin:0;\n\tpadding:1px 0;\n}\n\n*:first-child+html select.select[class]\n{\n\tmargin:1px 0;\n}\n\n.safari select.select\n{\n\tfont-size:120% !important;\n\tmargin-bottom:1px;\n}\n\ninput.small\n{\n\twidth:25%;\n}\n\nselect.small\n{\n\twidth:25%;\n}\n\ninput.medium\n{\n\twidth:50%;\n}\n\nselect.medium\n{\n\twidth:50%;\n}\n\ninput.large\n{\n\twidth:99%;\n}\n\nselect.large\n{\n\twidth:100%;\n}\n\ntextarea.small\n{\n\theight:5.5em;\n}\n\ntextarea.medium\n{\n\theight:10em;\n}\n\ntextarea.large\n{\n\theight:20em;\n}\n\n/**** Errors ****/\n#error_message\n{\n\tbackground:#fff;\n\tborder:1px dotted red;\n\tmargin-bottom:1em;\n\tpadding-left:0;\n\tpadding-right:0;\n\tpadding-top:4px;\n\ttext-align:center;\n\twidth:99%;\n}\n\n#error_message_title\n{\n\tcolor:#DF0000;\n\tfont-size:125%;\n\tmargin:7px 0 5px;\n\tpadding:0;\n}\n\n#error_message_desc\n{\n\tcolor:#000;\n\tfont-size:100%;\n\tmargin:0 0 .8em;\n}\n\n#error_message_desc strong\n{\n\tbackground-color:#FFDFDF;\n\tcolor:red;\n\tpadding:2px 3px;\n}\n\nform li.error\n{\n\tbackground-color:#FFDFDF !important;\n\tborder-bottom:1px solid #EACBCC;\n\tborder-right:1px solid #EACBCC;\n\tmargin:3px 0;\n}\n\nform li.error label\n{\n\tcolor:#DF0000 !important;\n}\n\nform p.error\n{\n\tclear:both;\n\tcolor:red;\n\tfont-size:10px;\n\tfont-weight:700;\n\tmargin:0 0 5px;\n}\n\nform .required\n{\n\tcolor:red;\n\tfloat:none;\n\tfont-weight:700;\n}\n\n/**** Guidelines and Error Highlight ****/\nform li.highlighted\n{\n\tbackground-color:#fff7c0;\n}\n\nform .guidelines\n{\n\tbackground:#f5f5f5;\n\tborder:1px solid #e6e6e6;\n\tcolor:#444;\n\tfont-size:80%;\n\tleft:100%;\n\tline-height:130%;\n\tmargin:0 0 0 8px;\n\tpadding:8px 10px 9px;\n\tposition:absolute;\n\ttop:0;\n\tvisibility:hidden;\n\twidth:42%;\n\tz-index:1000;\n}\n\nform .guidelines small\n{\n\tfont-size:105%;\n}\n\nform li.highlighted .guidelines\n{\n\tvisibility:visible;\n}\n\nform li:hover .guidelines\n{\n\tvisibility:visible;\n}\n\n.no_guidelines .guidelines\n{\n\tdisplay:none !important;\n}\n\n.no_guidelines form li\n{\n\twidth:97%;\n}\n\n.no_guidelines li.section\n{\n\tpadding-left:9px;\n}\n\n/*** Success Message ****/\n.form_success \n{\n\tclear: both;\n\tmargin: 0;\n\tpadding: 90px 0pt 100px;\n\ttext-align: center\n}\n\n.form_success h2 {\n    clear:left;\n    font-size:160%;\n    font-weight:normal;\n    margin:0pt 0pt 3px;\n}\n\n/*** Password ****/\nul.password{\n    margin-top:60px;\n    margin-bottom: 60px;\n    text-align: center;\n}\n.password h2{\n    color:#DF0000;\n    font-weight:bold;\n    margin:0pt auto 10px;\n}\n\n.password input.text {\n   font-size:170% !important;\n   width:380px;\n   text-align: center;\n}\n.password label{\n   display:block;\n   font-size:120% !important;\n   padding-top:10px;\n   font-weight:bold;\n}\n\n#li_captcha{\n   padding-left: 5px;\n}\n\n\n#li_captcha span{\n\tfloat:none;\n}\n\n/** Embedded Form **/\n\n.embed #form_container{\n\tborder: none;\n}\n\n.embed #top, .embed #bottom, .embed h1{\n\tdisplay: none;\n}\n\n.embed #form_container{\n\twidth: 100%;\n}\n\n.embed #footer{\n\ttext-align: left;\n\tpadding-left: 10px;\n\twidth: 99%;\n}\n\n.embed #footer.success{\n\ttext-align: center;\n}\n\n.embed form.appnitro\n{\n\tmargin:0px 0px 0;\n\t\n}\n\n\n\n/*** Calendar **********************/\ndiv.calendar { position: relative; }\n\n.calendar table {\ncursor:pointer;\nborder:1px solid #ccc;\nfont-size: 11px;\ncolor: #000;\nbackground: #fff;\nfont-family:\"Lucida Grande\", Tahoma, Arial, Verdana, sans-serif;\n}\n\n.calendar .button { \ntext-align: center;    \npadding: 2px;          \n}\n\n.calendar .nav {\nbackground:#f5f5f5;\n}\n\n.calendar thead .title { \nfont-weight: bold;      \ntext-align: center;\nbackground: #dedede;\ncolor: #000;\npadding: 2px 0 3px 0;\n}\n\n.calendar thead .headrow { \nbackground: #f5f5f5;\ncolor: #444;\nfont-weight:bold;\n}\n\n.calendar thead .daynames { \nbackground: #fff;\ncolor:#333;\nfont-weight:bold;\n}\n\n.calendar thead .name { \nborder-bottom: 1px dotted #ccc;\npadding: 2px;\ntext-align: center;\ncolor: #000;\n}\n\n.calendar thead .weekend { \ncolor: #666;\n}\n\n.calendar thead .hilite { \nbackground-color: #444;\ncolor: #fff;\npadding: 1px;\n}\n\n.calendar thead .active { \nbackground-color: #d12f19;\ncolor:#fff;\npadding: 2px 0px 0px 2px;\n}\n\n\n.calendar tbody .day { \nwidth:1.8em;\ncolor: #222;\ntext-align: right;\npadding: 2px 2px 2px 2px;\n}\n.calendar tbody .day.othermonth {\nfont-size: 80%;\ncolor: #bbb;\n}\n.calendar tbody .day.othermonth.oweekend {\ncolor: #fbb;\n}\n\n.calendar table .wn {\npadding: 2px 2px 2px 2px;\nborder-right: 1px solid #000;\nbackground: #666;\n}\n\n.calendar tbody .rowhilite td {\nbackground: #FFF1AF;\n}\n\n.calendar tbody .rowhilite td.wn {\nbackground: #FFF1AF;\n}\n\n.calendar tbody td.hilite { \npadding: 1px 1px 1px 1px;\nbackground:#444 !important;\ncolor:#fff !important;\n}\n\n.calendar tbody td.active { \ncolor:#fff;\nbackground: #529214 !important;\npadding: 2px 2px 0px 2px;\n}\n\n.calendar tbody td.selected { \nfont-weight: bold;\nborder: 1px solid #888;\npadding: 1px 1px 1px 1px;\nbackground: #f5f5f5 !important;\ncolor: #222 !important;\n}\n\n.calendar tbody td.weekend { \ncolor: #666;\n}\n\n.calendar tbody td.today { \nfont-weight: bold;\ncolor: #529214;\nbackground:#D9EFC2;\n}\n\n.calendar tbody .disabled { color: #999; }\n\n.calendar tbody .emptycell { \nvisibility: hidden;\n}\n\n.calendar tbody .emptyrow { \ndisplay: none;\n}\n\n.calendar tfoot .footrow { \ntext-align: center;\nbackground: #556;\ncolor: #fff;\n}\n\n.calendar tfoot .ttip { \nbackground: #222;\ncolor: #fff;\nfont-size:10px;\nborder-top: 1px solid #dedede;\npadding: 3px;\n}\n\n.calendar tfoot .hilite { \nbackground: #aaf;\nborder: 1px solid #04f;\ncolor: #000;\npadding: 1px;\n}\n\n.calendar tfoot .active { \nbackground: #77c;\npadding: 2px 0px 0px 2px;\n}\n\n.calendar .combo {\nposition: absolute;\ndisplay: none;\ntop: 0px;\nleft: 0px;\nwidth: 4em;\nborder: 1px solid #ccc;\nbackground: #f5f5f5;\ncolor: #222;\nfont-size: 90%;\nz-index: 100;\n}\n\n.calendar .combo .label,\n.calendar .combo .label-IEfix {\ntext-align: center;\npadding: 1px;\n}\n\n.calendar .combo .label-IEfix {\nwidth: 4em;\n}\n\n.calendar .combo .hilite {\nbackground: #444;\ncolor:#fff;\n}\n\n.calendar .combo .active {\nborder-top: 1px solid #999;\nborder-bottom: 1px solid #999;\nbackground: #dedede;\nfont-weight: bold;\n}\n\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports) {
 
 
@@ -12778,7 +12786,7 @@ module.exports = function (css) {
 
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -32895,19 +32903,19 @@ module.exports = __WEBPACK_EXTERNAL_MODULE_vue__;
 //# sourceMappingURL=vuetify.js.map
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(27);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_router__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_AppHome_vue__ = __webpack_require__(28);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Login_vue__ = __webpack_require__(31);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_LocationSetting_LocationSetting_vue__ = __webpack_require__(8);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Contact_Contact_vue__ = __webpack_require__(36);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_About_About_vue__ = __webpack_require__(39);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_GPS_sendGPS_vue__ = __webpack_require__(42);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_AppHome_vue__ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Login_vue__ = __webpack_require__(32);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_LocationSetting_LocationSetting_vue__ = __webpack_require__(9);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__components_Contact_Contact_vue__ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__components_About_About_vue__ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__components_GPS_sendGPS_vue__ = __webpack_require__(43);
 
 
 
@@ -32963,7 +32971,7 @@ __WEBPACK_IMPORTED_MODULE_1_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_0_vue_
 }));
 
 /***/ }),
-/* 27 */
+/* 28 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35594,11 +35602,11 @@ if (inBrowser && window.Vue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(3)))
 
 /***/ }),
-/* 28 */
+/* 29 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AppHome_vue_vue_type_template_id_b51266c0___ = __webpack_require__(29);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AppHome_vue_vue_type_template_id_b51266c0___ = __webpack_require__(30);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
 var script = {}
@@ -35619,7 +35627,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -35640,17 +35648,17 @@ component.options.__file = "src/components/AppHome.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 29 */
+/* 30 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppHome_vue_vue_type_template_id_b51266c0___ = __webpack_require__(30);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppHome_vue_vue_type_template_id_b51266c0___ = __webpack_require__(31);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppHome_vue_vue_type_template_id_b51266c0___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppHome_vue_vue_type_template_id_b51266c0___["b"]; });
 
 
 /***/ }),
-/* 30 */
+/* 31 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35660,20 +35668,42 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._v("\n    Components\n")])
+  return _vm._m(0)
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { attrs: { id: "toChange" } }, [
+      _c("img", {
+        staticClass: "hidden-md-and-down",
+        attrs: { src: __webpack_require__(6) }
+      }),
+      _vm._v(" "),
+      _c("img", {
+        staticClass: "hidden-lg-and-up",
+        attrs: {
+          src: __webpack_require__(6),
+          height: "50%",
+          width: "50%",
+          id: "centered"
+        }
+      })
+    ])
+  }
+]
 render._withStripped = true
 
 
 
 /***/ }),
-/* 31 */
+/* 32 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Login_vue_vue_type_template_id_ef68022e___ = __webpack_require__(32);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Login_vue_vue_type_script_lang_js___ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Login_vue_vue_type_template_id_ef68022e___ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__Login_vue_vue_type_script_lang_js___ = __webpack_require__(7);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
@@ -35696,7 +35726,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -35717,17 +35747,17 @@ component.options.__file = "src/components/Login.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 32 */
+/* 33 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_ef68022e___ = __webpack_require__(33);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_ef68022e___ = __webpack_require__(34);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_ef68022e___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Login_vue_vue_type_template_id_ef68022e___["b"]; });
 
 
 /***/ }),
-/* 33 */
+/* 34 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35830,17 +35860,17 @@ render._withStripped = true
 
 
 /***/ }),
-/* 34 */
+/* 35 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_template_id_7cfd03f2___ = __webpack_require__(35);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_template_id_7cfd03f2___ = __webpack_require__(36);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_template_id_7cfd03f2___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_LocationSetting_vue_vue_type_template_id_7cfd03f2___["b"]; });
 
 
 /***/ }),
-/* 35 */
+/* 36 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -35933,11 +35963,11 @@ render._withStripped = true
 
 
 /***/ }),
-/* 36 */
+/* 37 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Contact_vue_vue_type_template_id_3c9752de___ = __webpack_require__(37);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__Contact_vue_vue_type_template_id_3c9752de___ = __webpack_require__(38);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
 var script = {}
@@ -35958,7 +35988,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -35979,17 +36009,17 @@ component.options.__file = "src/components/Contact/Contact.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 37 */
+/* 38 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_3c9752de___ = __webpack_require__(38);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_3c9752de___ = __webpack_require__(39);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_3c9752de___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_Contact_vue_vue_type_template_id_3c9752de___["b"]; });
 
 
 /***/ }),
-/* 38 */
+/* 39 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36007,11 +36037,11 @@ render._withStripped = true
 
 
 /***/ }),
-/* 39 */
+/* 40 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__About_vue_vue_type_template_id_4600e22a___ = __webpack_require__(40);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__About_vue_vue_type_template_id_4600e22a___ = __webpack_require__(41);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
 var script = {}
@@ -36032,7 +36062,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_1__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36053,17 +36083,17 @@ component.options.__file = "src/components/About/About.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 40 */
+/* 41 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_4600e22a___ = __webpack_require__(41);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_4600e22a___ = __webpack_require__(42);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_4600e22a___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_About_vue_vue_type_template_id_4600e22a___["b"]; });
 
 
 /***/ }),
-/* 41 */
+/* 42 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36081,12 +36111,12 @@ render._withStripped = true
 
 
 /***/ }),
-/* 42 */
+/* 43 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sendGPS_vue_vue_type_template_id_33195f1d___ = __webpack_require__(43);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sendGPS_vue_vue_type_script_lang_js___ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__sendGPS_vue_vue_type_template_id_33195f1d___ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__sendGPS_vue_vue_type_script_lang_js___ = __webpack_require__(12);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
@@ -36109,7 +36139,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36130,17 +36160,17 @@ component.options.__file = "src/components/GPS/sendGPS.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 43 */
+/* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_template_id_33195f1d___ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_template_id_33195f1d___ = __webpack_require__(45);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_template_id_33195f1d___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_sendGPS_vue_vue_type_template_id_33195f1d___["b"]; });
 
 
 /***/ }),
-/* 44 */
+/* 45 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36156,7 +36186,13 @@ var render = function() {
       _c("p", [_vm._v(_vm._s(_vm.error))]),
       _vm._v(" "),
       _c("v-text-field", {
-        attrs: { id: "lat", label: "lat", box: "", required: "", disabled: "" },
+        attrs: {
+          id: "lat",
+          label: "Latitude",
+          box: "",
+          required: "",
+          disabled: ""
+        },
         model: {
           value: _vm.$root.lat,
           callback: function($$v) {
@@ -36169,8 +36205,7 @@ var render = function() {
       _c("v-text-field", {
         attrs: {
           id: "lon",
-          type: "lon",
-          label: "lon",
+          label: "Longitude",
           box: "",
           required: "",
           disabled: ""
@@ -36205,12 +36240,12 @@ render._withStripped = true
 
 
 /***/ }),
-/* 45 */
+/* 46 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_vue_vue_type_template_id_7ba5bd90___ = __webpack_require__(46);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue_vue_type_script_lang_js___ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__App_vue_vue_type_template_id_7ba5bd90___ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__App_vue_vue_type_script_lang_js___ = __webpack_require__(14);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
@@ -36233,7 +36268,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36254,17 +36289,17 @@ component.options.__file = "src/App.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 46 */
+/* 47 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___ = __webpack_require__(47);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___ = __webpack_require__(48);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_App_vue_vue_type_template_id_7ba5bd90___["b"]; });
 
 
 /***/ }),
-/* 47 */
+/* 48 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36294,12 +36329,12 @@ render._withStripped = true
 
 
 /***/ }),
-/* 48 */
+/* 49 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AppToolbar_vue_vue_type_template_id_5e36a16c___ = __webpack_require__(49);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AppToolbar_vue_vue_type_script_lang_js___ = __webpack_require__(15);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AppToolbar_vue_vue_type_template_id_5e36a16c___ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AppToolbar_vue_vue_type_script_lang_js___ = __webpack_require__(16);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
@@ -36322,7 +36357,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36343,17 +36378,17 @@ component.options.__file = "src/components/AppToolbar.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 49 */
+/* 50 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_template_id_5e36a16c___ = __webpack_require__(50);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_template_id_5e36a16c___ = __webpack_require__(51);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_template_id_5e36a16c___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppToolbar_vue_vue_type_template_id_5e36a16c___["b"]; });
 
 
 /***/ }),
-/* 50 */
+/* 51 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36479,12 +36514,12 @@ render._withStripped = true
 
 
 /***/ }),
-/* 51 */
+/* 52 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AppFooter_vue_vue_type_template_id_fdb56dc8___ = __webpack_require__(52);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AppFooter_vue_vue_type_script_lang_js___ = __webpack_require__(17);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__AppFooter_vue_vue_type_template_id_fdb56dc8___ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__AppFooter_vue_vue_type_script_lang_js___ = __webpack_require__(18);
 /* unused harmony namespace reexport */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_runtime_componentNormalizer_js__ = __webpack_require__(0);
 
@@ -36507,7 +36542,7 @@ var component = Object(__WEBPACK_IMPORTED_MODULE_2__node_modules_vue_loader_lib_
 
 /* hot reload */
 if (false) {
-  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\node_modules\\vue-hot-reload-api\\dist\\index.js")
+  var api = require("D:\\Red_Area\\nginx-1.14.0\\html\\BusTracking\\node_modules\\vue-hot-reload-api\\dist\\index.js")
   api.install(require('vue'))
   if (api.compatible) {
     module.hot.accept()
@@ -36528,17 +36563,17 @@ component.options.__file = "src/components/AppFooter.vue"
 /* harmony default export */ __webpack_exports__["a"] = (component.exports);
 
 /***/ }),
-/* 52 */
+/* 53 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_template_id_fdb56dc8___ = __webpack_require__(53);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_template_id_fdb56dc8___ = __webpack_require__(54);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_template_id_fdb56dc8___["a"]; });
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "b", function() { return __WEBPACK_IMPORTED_MODULE_0__node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_AppFooter_vue_vue_type_template_id_fdb56dc8___["b"]; });
 
 
 /***/ }),
-/* 53 */
+/* 54 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -36564,10 +36599,8 @@ var render = function() {
                 { staticClass: "light-blue accent-2" },
                 [
                   _c("strong", { staticClass: "subheading" }, [
-                    _vm._v("Foolow us!")
+                    _vm._v("Follow us!")
                   ]),
-                  _vm._v(" "),
-                  _c("v-divider"),
                   _vm._v(" "),
                   _vm._l(_vm.icons, function(icon) {
                     return _c(
@@ -36613,11 +36646,11 @@ render._withStripped = true
 
 
 /***/ }),
-/* 54 */
+/* 55 */
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(55);
+var content = __webpack_require__(56);
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -36663,7 +36696,7 @@ if(false) {
 }
 
 /***/ }),
-/* 55 */
+/* 56 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(4)(false);

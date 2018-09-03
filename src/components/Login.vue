@@ -41,13 +41,14 @@ export default {
         } ,      
     
      methods: {
-           checkForm: function (e) {
+           checkForm(e){
       if (this.$root.Password && this.$root.DriverID) {
         return true;
+        alert("subvmit now")
         
       }
 
-      this.errors = [];
+     // this.errors = [];
 
       if (!this.$root.Password) {
         this.errors.push('Password required.');
@@ -62,7 +63,7 @@ export default {
                 
                 console.log('hey')
                 
-                alert(this.$root.Password)
+               // alert(this.$root.Password)
                 
                
 

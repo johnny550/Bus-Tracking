@@ -1,3 +1,4 @@
+//require('@babel/polyfill');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -11,6 +12,14 @@ module.exports = {
 	,devtool : 'source-map'
 	,module : {
 		rules : [
+			 {
+				test: /\.(png|jpg|gif|svg)$/,
+      loader: 'file-loader',
+      options: {
+        name: '[name].[ext]?[hash]'
+      }
+            
+        },
 			{
 				 test	: /\.vue$/
 				,loader	: 'vue-loader'

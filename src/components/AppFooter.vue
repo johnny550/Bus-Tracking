@@ -10,9 +10,8 @@
       tile
     >
       <v-card-title class="light-blue accent-2">
-        <strong class="subheading">Foolow us!</strong>
+        <strong class="subheading">Follow us!</strong>
 
-        <v-divider></v-divider>
 
         <v-btn
           v-for="icon in icons"
@@ -37,9 +36,9 @@
   export default {
     data: () => ({
       icons: [
-        'facebook_box',
-        'twitter',
-        'google_plus_box',
+        'facebook',
+        'twitter_box',
+        'google_plus',
         'instagram'
       ]
     })

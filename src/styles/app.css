@@ -6,6 +6,16 @@ body
 	margin:8px 0 16px;
 	text-align:center;
 }
+#toChange
+{
+	background: #c3c3c3
+}
+#centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 #form_container
 {
